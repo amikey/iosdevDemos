@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UITabBarDelegate, UITableViewDataSource>
+@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 @property (strong,nonatomic) NSArray *dataList;
 
 @end
