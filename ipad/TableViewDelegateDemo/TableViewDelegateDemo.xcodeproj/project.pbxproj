@@ -18,6 +18,8 @@
 		3B0BFAEC1787C14900E1DDA8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B0BFAEB1787C14900E1DDA8 /* Default-568h@2x.png */; };
 		3B0BFAEF1787C14900E1DDA8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0BFAED1787C14900E1DDA8 /* MainStoryboard.storyboard */; };
 		3B0BFAF21787C14900E1DDA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0BFAF11787C14900E1DDA8 /* ViewController.m */; };
+		70BD1AB317A10A14002364F6 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 70BD1AB217A10A14002364F6 /* 1.jpg */; };
+		70BD1AB917A10B1F002364F6 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BD1AB817A10B1F002364F6 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		3B0BFAEE1787C14900E1DDA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3B0BFAF01787C14900E1DDA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3B0BFAF11787C14900E1DDA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		70BD1AB217A10A14002364F6 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = ../../../../../Pictures/1.jpg; sourceTree = "<group>"; };
+		70BD1AB717A10B1E002364F6 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		70BD1AB817A10B1F002364F6 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +88,12 @@
 		3B0BFADB1787C14900E1DDA8 /* TableViewDelegateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				70BD1AB217A10A14002364F6 /* 1.jpg */,
 				3B0BFAE41787C14900E1DDA8 /* AppDelegate.h */,
 				3B0BFAE51787C14900E1DDA8 /* AppDelegate.m */,
 				3B0BFAED1787C14900E1DDA8 /* MainStoryboard.storyboard */,
+				70BD1AB717A10B1E002364F6 /* CollectionViewController.h */,
+				70BD1AB817A10B1F002364F6 /* CollectionViewController.m */,
 				3B0BFAF01787C14900E1DDA8 /* ViewController.h */,
 				3B0BFAF11787C14900E1DDA8 /* ViewController.m */,
 				3B0BFADC1787C14900E1DDA8 /* Supporting Files */,
@@ -163,6 +171,7 @@
 				3B0BFAEA1787C14900E1DDA8 /* Default@2x.png in Resources */,
 				3B0BFAEC1787C14900E1DDA8 /* Default-568h@2x.png in Resources */,
 				3B0BFAEF1787C14900E1DDA8 /* MainStoryboard.storyboard in Resources */,
+				70BD1AB317A10A14002364F6 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +185,7 @@
 				3B0BFAE21787C14900E1DDA8 /* main.m in Sources */,
 				3B0BFAE61787C14900E1DDA8 /* AppDelegate.m in Sources */,
 				3B0BFAF21787C14900E1DDA8 /* ViewController.m in Sources */,
+				70BD1AB917A10B1F002364F6 /* CollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +310,7 @@
 				3B0BFAF71787C14900E1DDA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
