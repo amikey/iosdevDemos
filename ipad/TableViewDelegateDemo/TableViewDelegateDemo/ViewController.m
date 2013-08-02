@@ -122,9 +122,12 @@ NSString *const kTableCellIdentifier = @"myTableViewCell";
 {
     if(indexPath.section == 0){
         return UITableViewCellEditingStyleDelete;
-    }else{
+    }else if(indexPath.section ==1){
         return UITableViewCellEditingStyleInsert;
+    }else{
+        return UITableViewCellEditingStyleNone;
     }
+        
 }
 //点击操作按钮时执行的动作
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -150,7 +153,7 @@ NSString *const kTableCellIdentifier = @"myTableViewCell";
     {
         type = @"default";
     }
-    NSLog(@"you clied button %@", type);
+    NSLog(@"you clicked button %@", type);
 }
 
 
@@ -287,9 +290,45 @@ NSString *const kTableCellIdentifier = @"myTableViewCell";
     NSLog(@"点击了%d分组%d行的accessoryButton", [indexPath section], [indexPath row]);
 }
 
-//选中操作___________________________
-//选中行动作
--(void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+
+//Selection 选中相关功能___________________________
+//行是否可被选中并高亮
+-(BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.row%2 == 0){
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
+//选中行
+-(void)tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"you hightlighted %@", indexPath);
+}
+
+//取消选中的行
+-(void)tableView:(UITableView *)tableView didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"you unhightlighted %@", indexPath);
+}
+
+//将要选中行之前可以重新定义要选中的行
+-(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return indexPath;
+    //return nil;//返回nil则不会有蓝色背影的选中状态了，但还是会触发didHightlightRowAtIndexPath
+}
+
+//将要删除行时可以自定义要删除的行
+-(NSIndexPath *)tableView:(UITableView *)tableView willDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return indexPath;
+}
+
+//选中行后
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //更新右侧选中标签
     UITableViewCell *curCell = [tableView cellForRowAtIndexPath:indexPath];
@@ -300,13 +339,89 @@ NSString *const kTableCellIdentifier = @"myTableViewCell";
     {
         curCell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
+    NSLog(@"you selected %@", indexPath);
 }
 
--(void)setEditing:(BOOL)editing animated:(BOOL)animated
+//取消选中后
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [super setEditing:editing animated:animated];
-    [self.myTable setEditing:editing animated:animated];
+    NSLog(@"you deselect %@", indexPath);
 }
+
+//editing 编辑相关功能___________________________
+//返回编辑类别 在上面已经申明，[tableView setEditing: YES]编辑状态时出现
+//-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+
+//删除按钮上的文本
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"are you sure delete?";
+}
+
+//编辑状态时是否缩进，这个对UITableViewCellEditinStyleNone有用，因为其他两个delete和insert的前面会出按钮，必须要缩进的
+-(BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return NO;
+}
+
+//通过滑动出现插入、删除、移动操作时，目前我只实现出向右滑动出现删除按钮
+-(void)tableView:(UITableView *)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"willBeginEditingRowAtIndexPath: %@", indexPath);
+}
+
+//通过滑动出现的操作状态失去时，取消或者完成都会触发
+-(void)tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"didEndEditingRowAtIndexPath: %@", indexPath);
+}
+
+//移动行时可以自定义目标位置
+-(NSIndexPath *)tableView:(UITableView *)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath
+{
+    NSLog(@"sourceIndexPath %@, toProposedIndexPath: %@", sourceIndexPath, proposedDestinationIndexPath);
+    return proposedDestinationIndexPath;//[NSIndexPath indexPathForRow:1 inSection:0];
+}
+
+//控制缩进
+-(NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(indexPath.section == 0)return 1;
+    if(indexPath.section == 1)return 3;
+    return 5;
+}
+
+//长按出 copy/paste action气泡________________________
+//允许长按弹出菜单
+-(BOOL)tableView:(UITableView *)tableView shouldShowMenuForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+//可指定弹出的action类别，一共有cut,copy,selectAll,paste
+-(BOOL)tableView:(UITableView *)tableView canPerformAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
+{
+    if(action != @selector(selectAll:)){
+        return YES;
+    }
+    return NO;
+}
+//点击action执行内容
+-(void)tableView:(UITableView *)tableView performAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
+{
+    NSString *act = nil;
+    if(action == @selector(copy:)){
+        act = @"copy";
+    }else if(action == @selector(paste:)){
+        act = @"paste";
+    }else if(action == @selector(cut:)){
+        act = @"cut";
+    }else if(action == @selector(selectAll:)){
+        act = @"selectAll";
+    }
+    NSLog(@"performAction: %@, forRow: %@, sender: %@", act, indexPath, sender);
+}
+
 
 
 @end
