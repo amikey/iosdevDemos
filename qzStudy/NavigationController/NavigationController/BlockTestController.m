@@ -33,6 +33,7 @@
     btn.frame = CGRectMake(50, 100, 200, 30);
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(runBlockTest:) forControlEvents:UIControlEventTouchUpInside];
+    self.title = @"Block Test";
 }
 
 - (void)didReceiveMemoryWarning

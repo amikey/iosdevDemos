@@ -23,6 +23,8 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             NSLog(@"val is : %d", val);
             NSLog(@"val2 is : %d", val2);
+            val2 = 30;
+            NSLog(@"val2 changed in block is : %d", val2);
             if(self.delegate != nil){
                 [self.delegate loadedImage:image];
             }

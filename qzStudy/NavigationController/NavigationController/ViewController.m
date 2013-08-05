@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+    self.title = @"HOME";
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 50, 200, 30)];
     label.text = @"Home Page";
     label.backgroundColor = [UIColor clearColor];
