@@ -1,5 +1,5 @@
 //
-//  BlockTestController.h
+//  DeallocTest.h
 //  NavigationController
 //
 //  Created by 侯 坤明 on 13-8-5.
@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class AsyncImage;
-
-@interface BlockTestController : UIViewController
-{
-    AsyncImage *_asyncLoad;
-}
+@interface DeallocTest : UIView
 
 @end

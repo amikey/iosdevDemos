@@ -18,21 +18,21 @@
 -(void)drawWithBlock: (void(^)(void))block
 {
     if(self.urlStr != nil && self.image == nil && self.status == 0){
-        self.status = 1;
+        __weak ImageLayer *_self = self;
+        _self.status = 1;
         dispatch_queue_t queue = dispatch_queue_create("load feed image", nil);
         dispatch_async(queue, ^{
-            UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.urlStr]]];
-            self.image = image;
-            CGRect rect =  self.rect;
-            CGSize size = self.image.size;
+            _self.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.urlStr]]];
+            CGRect rect =  _self.rect;
+            CGSize size = _self.image.size;
             if(size.width > rect.size.width){
                 rect.size.height = rect.size.width * size.height/size.width;
             }else{
                 rect.size = size;
             }
-            self.rect = rect;
+            _self.rect = rect;
             dispatch_async(dispatch_get_main_queue(), ^{
-                self.status = 2;
+                _self.status = 2;
                 block();
             });
         });

@@ -107,8 +107,8 @@
                           , nil];
     for (NSInteger i = 0; i < [feedDatas count]; i++) {
         [list addObject: [[FeedDataModule alloc] initWithMutableArray:
-                          [NSDictionary dictionaryWithObjects: [feedDatas objectAtIndex: i]
-                                                      forKeys: keys
+                              [NSDictionary dictionaryWithObjects: [feedDatas objectAtIndex: i]
+                                                          forKeys: keys
                            ]]];
     }
     return list;
