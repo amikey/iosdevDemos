@@ -11,6 +11,9 @@
 @protocol MainPageDelegate <NSObject>
 
 -(void)gotoControllerPropertyListPage:(id)sender;
+-(void)gotoControllerExecOrder:(id)sender;
+-(void)gotoPresentControllerExecOrder:(id)sender;
+-(void)showModalController:(id)sender;
 
 @end
 

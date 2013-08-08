@@ -59,6 +59,7 @@
     NSLog(@"willMoveToWindow");
     if(resultText == nil){
         resultText = [[UITextView alloc] init];
+        resultText.editable = NO;
         resultText.frame = CGRectMake(10, 30, 300, 300);
         resultText.text = @"default text";
         [self addSubview:resultText];
@@ -90,10 +91,6 @@
                                 @"controller 的 title, 会显示到Navigation bar中间", @"desc",
                                 nil],
                                
-                               [NSDictionary dictionaryWithObjectsAndKeys:
-                                @"storyboard", @"name",
-                                @"controller 的 storyboard对象", @"desc",
-                                nil],
                                
                                [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"parentViewController", @"name",
@@ -116,33 +113,48 @@
                                 nil],
                                
                                [NSDictionary dictionaryWithObjectsAndKeys:
-                                @"storyboard", @"name",
-                                @"controller 的 storyboard", @"desc",
+                                @"definesPresentationContext", @"name",
+                                @"unknown", @"desc",
                                 nil],
                                
                                [NSDictionary dictionaryWithObjectsAndKeys:
-                                @"storyboard", @"name",
-                                @"controller 的 storyboard", @"desc",
+                                @"providesPresentationContextTransitionStyle", @"name",
+                                @"controller是否可以自定义过渡类型", @"desc",
                                 nil],
                                
                                [NSDictionary dictionaryWithObjectsAndKeys:
-                                @"storyboard", @"name",
-                                @"controller 的 storyboard", @"desc",
+                                @"isBeingPresented", @"name",
+                                @"是否正被父controller present", @"desc",
                                 nil],
                                
                                [NSDictionary dictionaryWithObjectsAndKeys:
-                                @"storyboard", @"name",
-                                @"controller 的 storyboard", @"desc",
+                                @"isBeingDismissed", @"name",
+                                @"是否正dismiss", @"desc",
                                 nil],
                                
                                [NSDictionary dictionaryWithObjectsAndKeys:
-                                @"storyboard", @"name",
-                                @"controller 的 storyboard", @"desc",
+                                @"isMovingToParentViewController", @"name",
+                                @"是否正被当成child view controller 添加到父controller", @"desc",
                                 nil],
                                
                                [NSDictionary dictionaryWithObjectsAndKeys:
-                                @"storyboard", @"name",
-                                @"controller 的 storyboard", @"desc",
+                                @"isMovingFromParentViewController", @"name",
+                                @"是否正被父controller移除", @"desc",
+                                nil],
+                               
+                               [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"modalTransitionStyle", @"name",
+                                @"设置被模态显示controller的过渡效果", @"desc",
+                                nil],
+                               
+                               [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"modalPresentationStyle", @"name",
+                                @"模态窗口的样式", @"desc",
+                                nil],
+                               
+                               [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"wantsFullScreenLayout", @"name",
+                                @"是否全屏显示", @"desc",
                                 nil],
                                
                                
