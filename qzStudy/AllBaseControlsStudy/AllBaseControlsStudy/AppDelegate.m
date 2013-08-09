@@ -16,8 +16,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    UINavigationController *nav = [[UINavigationController alloc]init];
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    [nav pushViewController:self.viewController animated:NO];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
 }

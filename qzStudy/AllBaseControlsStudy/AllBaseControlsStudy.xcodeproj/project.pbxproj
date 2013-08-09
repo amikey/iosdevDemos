@@ -23,6 +23,14 @@
 		70A61EFC17B3870B00F06A18 /* btn2.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A61EFB17B3870B00F06A18 /* btn2.png */; };
 		70A61EFE17B3878D00F06A18 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A61EFD17B3878D00F06A18 /* icon1.png */; };
 		70A61F0017B38C3B00F06A18 /* Button-play-2-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A61EFF17B38C3B00F06A18 /* Button-play-2-16.png */; };
+		70A61F0417B4930C00F06A18 /* UISegments.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A61F0217B4930C00F06A18 /* UISegments.m */; };
+		70A61F0517B4930C00F06A18 /* UISegments.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A61F0317B4930C00F06A18 /* UISegments.xib */; };
+		70A61F0E17B4AEB700F06A18 /* UITextFieldPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A61F0C17B4AEB700F06A18 /* UITextFieldPage.m */; };
+		70A61F0F17B4AEB700F06A18 /* UITextFieldPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A61F0D17B4AEB700F06A18 /* UITextFieldPage.xib */; };
+		70A61F1317B4D7F500F06A18 /* UISliderPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A61F1117B4D7F500F06A18 /* UISliderPage.m */; };
+		70A61F1417B4D7F500F06A18 /* UISliderPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A61F1217B4D7F500F06A18 /* UISliderPage.xib */; };
+		70A61F1817B50F2E00F06A18 /* UITextViewPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A61F1617B50F2D00F06A18 /* UITextViewPage.m */; };
+		70A61F1917B50F2E00F06A18 /* UITextViewPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A61F1717B50F2D00F06A18 /* UITextViewPage.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +56,18 @@
 		70A61EFB17B3870B00F06A18 /* btn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn2.png; sourceTree = "<group>"; };
 		70A61EFD17B3878D00F06A18 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
 		70A61EFF17B38C3B00F06A18 /* Button-play-2-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button-play-2-16.png"; sourceTree = "<group>"; };
+		70A61F0117B4930C00F06A18 /* UISegments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISegments.h; sourceTree = "<group>"; };
+		70A61F0217B4930C00F06A18 /* UISegments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISegments.m; sourceTree = "<group>"; };
+		70A61F0317B4930C00F06A18 /* UISegments.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UISegments.xib; sourceTree = "<group>"; };
+		70A61F0B17B4AEB700F06A18 /* UITextFieldPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldPage.h; sourceTree = "<group>"; };
+		70A61F0C17B4AEB700F06A18 /* UITextFieldPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldPage.m; sourceTree = "<group>"; };
+		70A61F0D17B4AEB700F06A18 /* UITextFieldPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITextFieldPage.xib; sourceTree = "<group>"; };
+		70A61F1017B4D7F500F06A18 /* UISliderPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISliderPage.h; sourceTree = "<group>"; };
+		70A61F1117B4D7F500F06A18 /* UISliderPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISliderPage.m; sourceTree = "<group>"; };
+		70A61F1217B4D7F500F06A18 /* UISliderPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UISliderPage.xib; sourceTree = "<group>"; };
+		70A61F1517B50F2D00F06A18 /* UITextViewPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewPage.h; sourceTree = "<group>"; };
+		70A61F1617B50F2D00F06A18 /* UITextViewPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewPage.m; sourceTree = "<group>"; };
+		70A61F1717B50F2D00F06A18 /* UITextViewPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITextViewPage.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +147,18 @@
 				70A61EE917B34A7100F06A18 /* ViewController.h */,
 				70A61EEA17B34A7100F06A18 /* ViewController.m */,
 				70A61EEC17B34A7100F06A18 /* ViewController.xib */,
+				70A61F0117B4930C00F06A18 /* UISegments.h */,
+				70A61F0217B4930C00F06A18 /* UISegments.m */,
+				70A61F0317B4930C00F06A18 /* UISegments.xib */,
+				70A61F0B17B4AEB700F06A18 /* UITextFieldPage.h */,
+				70A61F0C17B4AEB700F06A18 /* UITextFieldPage.m */,
+				70A61F0D17B4AEB700F06A18 /* UITextFieldPage.xib */,
+				70A61F1017B4D7F500F06A18 /* UISliderPage.h */,
+				70A61F1117B4D7F500F06A18 /* UISliderPage.m */,
+				70A61F1217B4D7F500F06A18 /* UISliderPage.xib */,
+				70A61F1517B50F2D00F06A18 /* UITextViewPage.h */,
+				70A61F1617B50F2D00F06A18 /* UITextViewPage.m */,
+				70A61F1717B50F2D00F06A18 /* UITextViewPage.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -200,6 +232,10 @@
 				70A61EFC17B3870B00F06A18 /* btn2.png in Resources */,
 				70A61EFE17B3878D00F06A18 /* icon1.png in Resources */,
 				70A61F0017B38C3B00F06A18 /* Button-play-2-16.png in Resources */,
+				70A61F0517B4930C00F06A18 /* UISegments.xib in Resources */,
+				70A61F0F17B4AEB700F06A18 /* UITextFieldPage.xib in Resources */,
+				70A61F1417B4D7F500F06A18 /* UISliderPage.xib in Resources */,
+				70A61F1917B50F2E00F06A18 /* UITextViewPage.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +250,10 @@
 				70A61EE217B34A7000F06A18 /* AppDelegate.m in Sources */,
 				70A61EEB17B34A7100F06A18 /* ViewController.m in Sources */,
 				70A61EF817B34AE400F06A18 /* ViewControllerView.m in Sources */,
+				70A61F0417B4930C00F06A18 /* UISegments.m in Sources */,
+				70A61F0E17B4AEB700F06A18 /* UITextFieldPage.m in Sources */,
+				70A61F1317B4D7F500F06A18 /* UISliderPage.m in Sources */,
+				70A61F1817B50F2E00F06A18 /* UITextViewPage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,12 @@
 
 #import "ViewController.h"
 #import "ViewControllerView.h"
+#import "UISegments.h"
+#import "UITextFieldPage.h"
+#import "UISliderPage.h"
+#import "UITextViewPage.h"
 
-@interface ViewController ()
+@interface ViewController ()<ViewControllerViewDelegate>
 
 @end
 
@@ -19,6 +23,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    ((ViewControllerView *)self.view).delegate2 = self;
     [((ViewControllerView *)self.view) createAllControls];
 }
 
@@ -28,4 +33,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)gotoUISegmented
+{
+    NSLog(@"clicked");
+    UISegments *segment = [[UISegments alloc] initWithNibName:@"UISegments" bundle:nil];
+    [self.navigationController pushViewController:segment  animated:YES];
+}
+
+-(void)gotoUITextField
+{
+    UITextFieldPage *controller = [[UITextFieldPage alloc] initWithNibName:@"UITextFieldPage" bundle:nil];
+    [self.navigationController pushViewController:controller  animated:YES];
+}
+
+-(void)gotoUISlider
+{
+    UISliderPage *controller = [[UISliderPage alloc] initWithNibName:@"UISliderPage" bundle:nil];
+    [self.navigationController pushViewController:controller  animated:YES];
+}
+
+-(void)gotoUITextViewPage
+{
+    UITextViewPage *controller = [[UITextViewPage alloc] initWithNibName:@"UITextViewPage" bundle:nil];
+    [self.navigationController pushViewController:controller  animated:YES];
+}
 @end

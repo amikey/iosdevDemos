@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 
 
+@protocol ViewControllerViewDelegate <NSObject>
+-(void)gotoUISegmented;
+-(void)gotoUITextField;
+-(void)gotoUISlider;
+-(void)gotoUITextViewPage;
+@end
 
 @interface ViewControllerView : UIScrollView
+@property(assign, nonatomic)id<ViewControllerViewDelegate> delegate2;
 -(void)createAllControls;
 
 @end
