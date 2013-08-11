@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BB8653D17B786A900AF834A /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8653B17B786A900AF834A /* ViewController2.m */; };
+		3BB8653E17B786A900AF834A /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BB8653C17B786A900AF834A /* ViewController2.xib */; };
 		70A61E8617B0E5B400F06A18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A61E8517B0E5B400F06A18 /* UIKit.framework */; };
 		70A61E8817B0E5B400F06A18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A61E8717B0E5B400F06A18 /* Foundation.framework */; };
 		70A61E8A17B0E5B400F06A18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A61E8917B0E5B400F06A18 /* CoreGraphics.framework */; };
@@ -31,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BB8653A17B786A900AF834A /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		3BB8653B17B786A900AF834A /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		3BB8653C17B786A900AF834A /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
 		70A61E8217B0E5B400F06A18 /* ViewControllerLifeCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerLifeCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A61E8517B0E5B400F06A18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		70A61E8717B0E5B400F06A18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -148,6 +153,9 @@
 				70A61EBD17B2346A00F06A18 /* PresentViewControllerExecOrderController.h */,
 				70A61EBE17B2346A00F06A18 /* PresentViewControllerExecOrderController.m */,
 				70A61EBF17B2346B00F06A18 /* PresentViewControllerExecOrderController.xib */,
+				3BB8653A17B786A900AF834A /* ViewController2.h */,
+				3BB8653B17B786A900AF834A /* ViewController2.m */,
+				3BB8653C17B786A900AF834A /* ViewController2.xib */,
 			);
 			name = Controllers;
 			path = ..;
@@ -227,6 +235,7 @@
 				70A61EB117B119E000F06A18 /* ViewControllerProperty.xib in Resources */,
 				70A61EB917B22A6F00F06A18 /* ViewControllerMethod.xib in Resources */,
 				70A61EC117B2346B00F06A18 /* PresentViewControllerExecOrderController.xib in Resources */,
+				3BB8653E17B786A900AF834A /* ViewController2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +256,7 @@
 				70A61EBC17B22A8800F06A18 /* ControllerMethod.m in Sources */,
 				70A61EC017B2346B00F06A18 /* PresentViewControllerExecOrderController.m in Sources */,
 				70A61EC417B2349700F06A18 /* PresentViewControllerExecOrderView.m in Sources */,
+				3BB8653D17B786A900AF834A /* ViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

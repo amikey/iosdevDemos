@@ -8,8 +8,9 @@
 
 #import "PresentViewControllerExecOrderController.h"
 #import "PresentViewControllerExecOrderView.h"
+#import "ViewController2.h"
 
-@interface PresentViewControllerExecOrderController ()<PresentViewDelegate>
+@interface PresentViewControllerExecOrderController ()<PresentViewDelegate, ModalController>
 
 @end
 
@@ -22,6 +23,29 @@
         // Custom initialization
     }
     return self;
+}
+- (IBAction)goNext:(id)sender {
+    ViewController2 *c2 = [[ViewController2 alloc] initWithNibName:@"ViewController2" bundle:nil];
+    [self presentViewController:c2 animated:YES completion:^{
+        
+    }];
+    c2.delegate = self;
+}
+- (IBAction)goHome:(id)sender {
+    [self goHome];
+}
+-(void)goHome
+{
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
+-(void)goPre
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 - (void)viewDidLoad
@@ -78,8 +102,11 @@
 -(void)gotoBackPage:(id)sender
 {
     NSLog(@"isBeingDismissed is %@", self.isBeingDismissed ? @"YES" : @"NO");
-    [self dismissViewControllerAnimated:YES completion:^{
-        NSLog(@"completion,isBeingDismissed is %@", self.isBeingDismissed ? @"YES" : @"NO");
+//    [self dismissViewControllerAnimated:YES completion:^{
+//        NSLog(@"completion,isBeingDismissed is %@", self.isBeingDismissed ? @"YES" : @"NO");
+//    }];
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
+        
     }];
     NSLog(@"last, isBeingDismissed is %@", self.isBeingDismissed ? @"YES" : @"NO");
 }

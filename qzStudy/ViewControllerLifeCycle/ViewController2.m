@@ -1,14 +1,15 @@
 //
 //  ViewController2.m
-//  ReloadTableViewCellDemo
+//  ViewControllerLifeCycle
 //
-//  Created by 侯 坤明 on 13-8-4.
+//  Created by 侯 坤明 on 13-8-11.
 //  Copyright (c) 2013年 侯 坤明. All rights reserved.
 //
 
 #import "ViewController2.h"
 
 @interface ViewController2 ()
+@property (strong, nonatomic) IBOutlet UIButton *backButton;
 
 @end
 
@@ -21,6 +22,12 @@
         // Custom initialization
     }
     return self;
+}
+- (IBAction)goHome:(id)sender {
+    [self.delegate goHome];
+}
+- (IBAction)gotoBack:(id)sender {
+    [self.delegate goPre];
 }
 
 - (void)viewDidLoad

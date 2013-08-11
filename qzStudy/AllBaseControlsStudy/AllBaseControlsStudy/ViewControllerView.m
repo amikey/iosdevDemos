@@ -75,6 +75,7 @@
 // button start ---------------------------------------------------------
     CGRect rect2 = CGRectMake(10, 60, 300, 30);
     btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    btn.enabled = NO;
 //    
 //    
 //    

@@ -53,8 +53,8 @@
 
 -(void)textViewDidChangeSelection:(UITextView *)textView
 {
-    NSString *str = [textView firstRectForRange: textView.selectedTextRange];
-    NSLog(@"%@", [textView.text   textView.selectedTextRange.start   );
+//    NSString *str = [textView firstRectForRange: textView.selectedTextRange];
+//    NSLog(@"%@", [textView.text   textView.selectedTextRange.start   );
 }
 
 @end
