@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource
 
 @end
 
@@ -20,7 +20,6 @@
         rect.origin.y = arc4random() % (int)self.view.bounds.size.height;
         self.btn.frame = rect;
     }completion:^(BOOL finished){
-        
     }];
 }
 
