@@ -12,6 +12,8 @@
 #import "UITextFieldPage.h"
 #import "UISliderPage.h"
 #import "UITextViewPage.h"
+#import "DatePicker.h"
+#import "PickerView.h"
 
 @interface ViewController ()<ViewControllerViewDelegate>
 
@@ -56,5 +58,18 @@
 {
     UITextViewPage *controller = [[UITextViewPage alloc] initWithNibName:@"UITextViewPage" bundle:nil];
     [self.navigationController pushViewController:controller  animated:YES];
+}
+
+-(void)gotoDatePickerPage
+{
+    DatePicker *datePicker = [[DatePicker alloc] init];
+    [self.navigationController pushViewController:datePicker  animated:YES];
+}
+
+-(void)gotoPickerViewPage
+{
+    PickerView *picker = [[PickerView alloc] init];
+    [self.navigationController pushViewController:picker  animated:YES];
+
 }
 @end

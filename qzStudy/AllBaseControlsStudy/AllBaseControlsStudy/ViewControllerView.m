@@ -225,6 +225,23 @@
         [b4 addTarget:self action:@selector(gotoUITextViewPage:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:b4];
         
+        UIButton *b5 = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        [b5 setTitle:@"DatePicker" forState:UIControlStateNormal];
+        [b5 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        b5.imageEdgeInsets = UIEdgeInsetsFromString(@"{0,260,0,0}");
+        b5.frame = CGRectMake(10, 440, 300, 30);
+        [b5 addTarget:self action:@selector(gotoDatePickerPage:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:b5];
+        
+//        ADBannerView *ad = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 500, 320, 20)];
+//        [self addSubview:ad];
+        UIButton *b6 = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        [b6 setTitle:@"pickerView" forState:UIControlStateNormal];
+        [b6 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        b6.imageEdgeInsets = UIEdgeInsetsFromString(@"{0,260,0,0}");
+        b6.frame = CGRectMake(10, 500, 300, 30);
+        [b6 addTarget:self action:@selector(gotoPickerViewPage:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:b6];
     }
 }
 
@@ -260,5 +277,14 @@
     [self.delegate2 gotoUITextViewPage];
 }
 
+-(IBAction)gotoDatePickerPage:(id)sender
+{
+    [self.delegate2 gotoDatePickerPage];
+}
+
+-(IBAction)gotoPickerViewPage:(id)sender
+{
+    [self.delegate2 gotoPickerViewPage];
+}
 @end
 

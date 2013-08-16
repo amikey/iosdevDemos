@@ -31,6 +31,11 @@
 		70A61F1417B4D7F500F06A18 /* UISliderPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A61F1217B4D7F500F06A18 /* UISliderPage.xib */; };
 		70A61F1817B50F2E00F06A18 /* UITextViewPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A61F1617B50F2D00F06A18 /* UITextViewPage.m */; };
 		70A61F1917B50F2E00F06A18 /* UITextViewPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A61F1717B50F2D00F06A18 /* UITextViewPage.xib */; };
+		70A61F1D17B887F500F06A18 /* DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A61F1B17B887F500F06A18 /* DatePicker.m */; };
+		70A61F1E17B887F500F06A18 /* DatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A61F1C17B887F500F06A18 /* DatePicker.xib */; };
+		70A61F2017B88AA300F06A18 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A61F1F17B88AA300F06A18 /* iAd.framework */; };
+		70A61F2417B8B73300F06A18 /* PickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A61F2217B8B73200F06A18 /* PickerView.m */; };
+		70A61F2517B8B73300F06A18 /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A61F2317B8B73300F06A18 /* PickerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,13 @@
 		70A61F1517B50F2D00F06A18 /* UITextViewPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewPage.h; sourceTree = "<group>"; };
 		70A61F1617B50F2D00F06A18 /* UITextViewPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewPage.m; sourceTree = "<group>"; };
 		70A61F1717B50F2D00F06A18 /* UITextViewPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITextViewPage.xib; sourceTree = "<group>"; };
+		70A61F1A17B887F400F06A18 /* DatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePicker.h; sourceTree = "<group>"; };
+		70A61F1B17B887F500F06A18 /* DatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePicker.m; sourceTree = "<group>"; };
+		70A61F1C17B887F500F06A18 /* DatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePicker.xib; sourceTree = "<group>"; };
+		70A61F1F17B88AA300F06A18 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		70A61F2117B8B73200F06A18 /* PickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerView.h; sourceTree = "<group>"; };
+		70A61F2217B8B73200F06A18 /* PickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerView.m; sourceTree = "<group>"; };
+		70A61F2317B8B73300F06A18 /* PickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70A61F2017B88AA300F06A18 /* iAd.framework in Frameworks */,
 				70A61ED217B34A7000F06A18 /* UIKit.framework in Frameworks */,
 				70A61ED417B34A7000F06A18 /* Foundation.framework in Frameworks */,
 				70A61ED617B34A7000F06A18 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +100,7 @@
 		70A61EC517B34A7000F06A18 = {
 			isa = PBXGroup;
 			children = (
+				70A61F1F17B88AA300F06A18 /* iAd.framework */,
 				70A61ED717B34A7000F06A18 /* AllBaseControlsStudy */,
 				70A61ED017B34A7000F06A18 /* Frameworks */,
 				70A61ECF17B34A7000F06A18 /* Products */,
@@ -159,6 +173,12 @@
 				70A61F1517B50F2D00F06A18 /* UITextViewPage.h */,
 				70A61F1617B50F2D00F06A18 /* UITextViewPage.m */,
 				70A61F1717B50F2D00F06A18 /* UITextViewPage.xib */,
+				70A61F1A17B887F400F06A18 /* DatePicker.h */,
+				70A61F1B17B887F500F06A18 /* DatePicker.m */,
+				70A61F1C17B887F500F06A18 /* DatePicker.xib */,
+				70A61F2117B8B73200F06A18 /* PickerView.h */,
+				70A61F2217B8B73200F06A18 /* PickerView.m */,
+				70A61F2317B8B73300F06A18 /* PickerView.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -236,6 +256,8 @@
 				70A61F0F17B4AEB700F06A18 /* UITextFieldPage.xib in Resources */,
 				70A61F1417B4D7F500F06A18 /* UISliderPage.xib in Resources */,
 				70A61F1917B50F2E00F06A18 /* UITextViewPage.xib in Resources */,
+				70A61F1E17B887F500F06A18 /* DatePicker.xib in Resources */,
+				70A61F2517B8B73300F06A18 /* PickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +276,8 @@
 				70A61F0E17B4AEB700F06A18 /* UITextFieldPage.m in Sources */,
 				70A61F1317B4D7F500F06A18 /* UISliderPage.m in Sources */,
 				70A61F1817B50F2E00F06A18 /* UITextViewPage.m in Sources */,
+				70A61F1D17B887F500F06A18 /* DatePicker.m in Sources */,
+				70A61F2417B8B73300F06A18 /* PickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

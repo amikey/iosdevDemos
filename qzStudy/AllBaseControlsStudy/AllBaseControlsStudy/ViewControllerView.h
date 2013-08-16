@@ -14,6 +14,8 @@
 -(void)gotoUITextField;
 -(void)gotoUISlider;
 -(void)gotoUITextViewPage;
+-(void)gotoDatePickerPage;
+-(void)gotoPickerViewPage;
 @end
 
 @interface ViewControllerView : UIScrollView
