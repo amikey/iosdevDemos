@@ -13,6 +13,7 @@
 @property (nonatomic, strong) UIManagedDocument *photoDatabase;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet UITableView *myTable;
+@property (strong, nonatomic) NSManagedObjectContext *context;
 
 @end
 
@@ -27,10 +28,35 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    if(!self.photoDatabase){
+        NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+        url = [url URLByAppendingPathComponent:@"Default Database"];
+        self.photoDatabase = [[UIManagedDocument alloc]  initWithFileURL:url];
+    }
+}
+
+-(void)useDocument
+{
+    if(!self.photoDatabase){
+        NSURL *url = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
+        url = [url URLByAppendingPathComponent:@"Default Database"];
+        self.photoDatabase = [[UIManagedDocument alloc] initWithFileURL:url];
+    }
+    if(![[NSFileManager defaultManager] fileExistsAtPath:[self.photoDatabase.fileURL path]]){
+        [self.photoDatabase saveToURL:self.photoDatabase.fileURL forSaveOperation:UIDocumentSaveForCreating completionHandler:^(BOOL success){
+            
+        }];
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    NSLog(@"context : %@", self.context);
+    self.searchBar.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,33 +70,19 @@
     
 }
 
--(void)useDocument
+-(void)addPhotosWithSearchResult: (NSArray *)photos
 {
-    if(!self.photoDatabase){
-        NSURL *url = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentationDirectory inDomains:NSUserDomainMask] lastObject];
-        url = [url URLByAppendingPathComponent:@"Default Photo Database"];
-        self.photoDatabase = [[UIManagedDocument alloc] initWithFileURL:url];
+    for(int i = 0; i < photos.count; i++)
+    {
+        NSLog(@"%@", [[photos objectAtIndex:i]objectForKey:@"tbUrl"]);
     }
-    if(![[NSFileManager defaultManager] fileExistsAtPath: [self.photoDatabase.fileURL path]]){
-        [self.photoDatabase saveToURL:self.photoDatabase.fileURL forSaveOperation:UIDocumentSaveForCreating completionHandler:^(BOOL success) {
-            [self setupFetchedResult];
-        }];
-    }else if(self.photoDatabase.documentState == UIDocumentStateClosed){
-        [self.photoDatabase openWithCompletionHandler:^(BOOL success) {
-            [self setupFetchedResult];
-        }];
-    }else if(self.photoDatabase.documentState == UIDocumentStateNormal){
-        [self setupFetchedResult];
-    }
-}
--(void)addPhotosWithSearchResult: (id)photos
-{
-    
 }
 
+//从数据库拉结果
 -(void)getPhotosFromDatabaseWithKey: (NSString *)key callback: (void (^)(id photos))callback
 {
     
+    callback(nil);
 }
 
 -(void)fetchGooglePhotosWithKey: (NSString *)key
@@ -80,13 +92,22 @@
             
         }else{
             NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=%@", key]];
-            NSData *result = [NSData dataWithContentsOfURL:url];
-            [self addPhotosWithSearchResult: [result objectFromJSONData]];
+           // NSData *result = [NSData dataWithContentsOfURL:url];
+            NSString *result= [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+            NSDictionary *list = [result objectFromJSONString];
+            
+            [self addPhotosWithSearchResult: [[list objectForKey:@"responseData"] objectForKey:@"results"]];
         }
     }];
 }
 
+
+// searchBar delegate
 -(void)searchBarBookmarkButtonClicked:(UISearchBar *)searchBar
+{
+    
+}
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
     [self fetchGooglePhotosWithKey: searchBar.text];
 }

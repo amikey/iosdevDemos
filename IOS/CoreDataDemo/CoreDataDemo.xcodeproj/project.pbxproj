@@ -17,14 +17,14 @@
 		3BF3A4EC17A54BE900FE08B6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF3A4EB17A54BE900FE08B6 /* Default@2x.png */; };
 		3BF3A4EE17A54BE900FE08B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF3A4ED17A54BE900FE08B6 /* Default-568h@2x.png */; };
 		3BF3A4F117A54BE900FE08B6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF3A4EF17A54BE900FE08B6 /* MainStoryboard.storyboard */; };
-		3BF3A4FF17A54EA700FE08B6 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 3BF3A4FB17A54EA700FE08B6 /* CHANGELOG.md */; };
-		3BF3A50017A54EA700FE08B6 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3A4FD17A54EA700FE08B6 /* JSONKit.m */; };
-		3BF3A50117A54EA700FE08B6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3BF3A4FE17A54EA700FE08B6 /* README.md */; };
 		3BF3A50417A54F7400FE08B6 /* GooglePhotos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3A50217A54F7400FE08B6 /* GooglePhotos.xcdatamodeld */; };
 		3BF3A51017A5535000FE08B6 /* Photos.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3A50F17A5535000FE08B6 /* Photos.m */; };
 		3BF3A51317A5535100FE08B6 /* Photography.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3A51217A5535100FE08B6 /* Photography.m */; };
 		3BF3A51617A5535100FE08B6 /* SearchKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3A51517A5535100FE08B6 /* SearchKeys.m */; };
 		3BF3A51917A5547D00FE08B6 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3A51817A5547D00FE08B6 /* SearchViewController.m */; };
+		70A61FDE17CB088C00F06A18 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A61FDD17CB088C00F06A18 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		70A61FED17CB392700F06A18 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A61FEC17CB392600F06A18 /* CoreData.framework */; };
+		70A61FF017CB409600F06A18 /* Photos+operate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A61FEF17CB409300F06A18 /* Photos+operate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,10 +42,6 @@
 		3BF3A4EB17A54BE900FE08B6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3BF3A4ED17A54BE900FE08B6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3BF3A4F017A54BE900FE08B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		3BF3A4FB17A54EA700FE08B6 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		3BF3A4FC17A54EA700FE08B6 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		3BF3A4FD17A54EA700FE08B6 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		3BF3A4FE17A54EA700FE08B6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		3BF3A50317A54F7400FE08B6 /* GooglePhotos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GooglePhotos.xcdatamodel; sourceTree = "<group>"; };
 		3BF3A50E17A5535000FE08B6 /* Photos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photos.h; sourceTree = "<group>"; };
 		3BF3A50F17A5535000FE08B6 /* Photos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photos.m; sourceTree = "<group>"; };
@@ -55,6 +51,11 @@
 		3BF3A51517A5535100FE08B6 /* SearchKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchKeys.m; sourceTree = "<group>"; };
 		3BF3A51717A5547D00FE08B6 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewController.h; path = ../SearchViewController.h; sourceTree = "<group>"; };
 		3BF3A51817A5547D00FE08B6 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchViewController.m; path = ../SearchViewController.m; sourceTree = "<group>"; };
+		70A61FDC17CB088C00F06A18 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		70A61FDD17CB088C00F06A18 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		70A61FEC17CB392600F06A18 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		70A61FEE17CB409100F06A18 /* Photos+operate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Photos+operate.h"; path = "../../../../../SVN/iPhoneQQV4.3_Qzone/Photos+operate.h"; sourceTree = "<group>"; };
+		70A61FEF17CB409300F06A18 /* Photos+operate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Photos+operate.m"; path = "../../../../../SVN/iPhoneQQV4.3_Qzone/Photos+operate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70A61FED17CB392700F06A18 /* CoreData.framework in Frameworks */,
 				3BF3A4D817A54BE900FE08B6 /* UIKit.framework in Frameworks */,
 				3BF3A4DA17A54BE900FE08B6 /* Foundation.framework in Frameworks */,
 				3BF3A4DC17A54BE900FE08B6 /* CoreGraphics.framework in Frameworks */,
@@ -74,6 +76,7 @@
 		3BF3A4CB17A54BE900FE08B6 = {
 			isa = PBXGroup;
 			children = (
+				70A61FEC17CB392600F06A18 /* CoreData.framework */,
 				3BF3A4DD17A54BE900FE08B6 /* CoreDataDemo */,
 				3BF3A4D617A54BE900FE08B6 /* Frameworks */,
 				3BF3A4D517A54BE900FE08B6 /* Products */,
@@ -103,17 +106,10 @@
 			children = (
 				3BF3A51717A5547D00FE08B6 /* SearchViewController.h */,
 				3BF3A51817A5547D00FE08B6 /* SearchViewController.m */,
-				3BF3A4E617A54BE900FE08B6 /* AppDelegate.h */,
-				3BF3A4E717A54BE900FE08B6 /* AppDelegate.m */,
 				3BF3A4EF17A54BE900FE08B6 /* MainStoryboard.storyboard */,
-				3BF3A50E17A5535000FE08B6 /* Photos.h */,
-				3BF3A51417A5535100FE08B6 /* SearchKeys.h */,
-				3BF3A51517A5535100FE08B6 /* SearchKeys.m */,
-				3BF3A51117A5535100FE08B6 /* Photography.h */,
-				3BF3A51217A5535100FE08B6 /* Photography.m */,
-				3BF3A50F17A5535000FE08B6 /* Photos.m */,
 				3BF3A50217A54F7400FE08B6 /* GooglePhotos.xcdatamodeld */,
-				3BF3A4FA17A54EA700FE08B6 /* JSONKit-master */,
+				70A61FF117CB409F00F06A18 /* model */,
+				70A61FDB17CB088B00F06A18 /* JSONKit */,
 				3BF3A4DE17A54BE900FE08B6 /* Supporting Files */,
 			);
 			path = CoreDataDemo;
@@ -122,6 +118,8 @@
 		3BF3A4DE17A54BE900FE08B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3BF3A4E617A54BE900FE08B6 /* AppDelegate.h */,
+				3BF3A4E717A54BE900FE08B6 /* AppDelegate.m */,
 				3BF3A4DF17A54BE900FE08B6 /* CoreDataDemo-Info.plist */,
 				3BF3A4E017A54BE900FE08B6 /* InfoPlist.strings */,
 				3BF3A4E317A54BE900FE08B6 /* main.m */,
@@ -133,16 +131,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3BF3A4FA17A54EA700FE08B6 /* JSONKit-master */ = {
+		70A61FDB17CB088B00F06A18 /* JSONKit */ = {
 			isa = PBXGroup;
 			children = (
-				3BF3A4FB17A54EA700FE08B6 /* CHANGELOG.md */,
-				3BF3A4FC17A54EA700FE08B6 /* JSONKit.h */,
-				3BF3A4FD17A54EA700FE08B6 /* JSONKit.m */,
-				3BF3A4FE17A54EA700FE08B6 /* README.md */,
+				70A61FDC17CB088C00F06A18 /* JSONKit.h */,
+				70A61FDD17CB088C00F06A18 /* JSONKit.m */,
 			);
-			name = "JSONKit-master";
-			path = "../../../../Downloads/JSONKit-master";
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		70A61FF117CB409F00F06A18 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3BF3A51417A5535100FE08B6 /* SearchKeys.h */,
+				3BF3A51517A5535100FE08B6 /* SearchKeys.m */,
+				3BF3A51117A5535100FE08B6 /* Photography.h */,
+				3BF3A51217A5535100FE08B6 /* Photography.m */,
+				3BF3A50E17A5535000FE08B6 /* Photos.h */,
+				3BF3A50F17A5535000FE08B6 /* Photos.m */,
+				70A61FEE17CB409100F06A18 /* Photos+operate.h */,
+				70A61FEF17CB409300F06A18 /* Photos+operate.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +211,6 @@
 				3BF3A4EC17A54BE900FE08B6 /* Default@2x.png in Resources */,
 				3BF3A4EE17A54BE900FE08B6 /* Default-568h@2x.png in Resources */,
 				3BF3A4F117A54BE900FE08B6 /* MainStoryboard.storyboard in Resources */,
-				3BF3A4FF17A54EA700FE08B6 /* CHANGELOG.md in Resources */,
-				3BF3A50117A54EA700FE08B6 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,12 +223,13 @@
 			files = (
 				3BF3A4E417A54BE900FE08B6 /* main.m in Sources */,
 				3BF3A4E817A54BE900FE08B6 /* AppDelegate.m in Sources */,
-				3BF3A50017A54EA700FE08B6 /* JSONKit.m in Sources */,
 				3BF3A50417A54F7400FE08B6 /* GooglePhotos.xcdatamodeld in Sources */,
 				3BF3A51017A5535000FE08B6 /* Photos.m in Sources */,
 				3BF3A51317A5535100FE08B6 /* Photography.m in Sources */,
 				3BF3A51617A5535100FE08B6 /* SearchKeys.m in Sources */,
 				3BF3A51917A5547D00FE08B6 /* SearchViewController.m in Sources */,
+				70A61FDE17CB088C00F06A18 /* JSONKit.m in Sources */,
+				70A61FF017CB409600F06A18 /* Photos+operate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +352,7 @@
 				3BF3A4F917A54BE900FE08B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
