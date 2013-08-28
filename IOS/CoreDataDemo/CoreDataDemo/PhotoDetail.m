@@ -1,22 +1,22 @@
 //
-//  Photography.m
+//  PhotoDetail.m
 //  CoreDataDemo
 //
-//  Created by 侯 坤明 on 13-7-28.
+//  Created by 侯 坤明 on 13-8-27.
 //  Copyright (c) 2013年 侯 坤明. All rights reserved.
 //
 
-#import "Photography.h"
-#import "Photos.h"
+#import "PhotoDetail.h"
+#import "Photo.h"
 
 
-@implementation Photography
+@implementation PhotoDetail
 
 @dynamic height;
+@dynamic imageId;
 @dynamic tburl;
 @dynamic url;
 @dynamic width;
-@dynamic imageId;
 @dynamic whoTook;
 
 @end
