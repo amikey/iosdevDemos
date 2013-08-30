@@ -12,6 +12,8 @@
 #import "Photo+operate.h"
 #import "SearchResultTableViewController.h"
 #import "SearchKey+operate.h"
+#import "PhotoDetail.h"
+#import "PhotoViewController.h"
 
 @interface SearchViewController ()<UISearchBarDelegate, NSFetchedResultsControllerDelegate, UITableViewDataSource, UITableViewDelegate>
 {
@@ -53,6 +55,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.searchBar.delegate = self;
+    self.myTable.dataSource = self;
     self.myTable.delegate = self;
 }
 
@@ -77,16 +80,18 @@
 -(void)fetchGooglePhotosWithKey: (NSString *)key
 {
     [self useDocumentWithBlock:^(BOOL success) {
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=%@", key]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://ajax.googleapis.com/ajax/services/search/images?v=1.0&rsz=8&q=%@", key]];
         NSString *result= [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
         NSDictionary *list = [result objectFromJSONString];
        [self.photoDatabase.managedObjectContext performBlock:^{
-           [Photo addWithPhotoList: [[list objectForKey:@"responseData"] objectForKey:@"results"]
-                           withKey: key
-                         inContext: self.photoDatabase.managedObjectContext];
-       }];
+           self.photoList = [Photo addWithPhotoList: [[list objectForKey:@"responseData"]
+                                                objectForKey:@"results"]
+                                            withKey: key
+                                          inContext: self.photoDatabase.managedObjectContext];
+           [self.myTable reloadData];
+        }];
         [self.photoDatabase saveToURL:self.photoDatabase.fileURL forSaveOperation:UIDocumentSaveForOverwriting completionHandler:^(BOOL success) {
-            [self getPhotosFromDatabaseWithKey:_currentKey];
+            
         }];
     }];
 }
@@ -96,8 +101,10 @@
     [self useDocumentWithBlock:^(BOOL success) {
         if(![SearchKey getKeyByName:key inContext:self.photoDatabase.managedObjectContext]){
             [self fetchGooglePhotosWithKey:key];
+            NSLog(@"from google---------------------------");
         }else{
             [self getPhotosFromDatabaseWithKey:key];
+            NSLog(@"from database---------------------------");
         }
     }];
 }
@@ -106,17 +113,21 @@
 // searchBar delegate
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
+    [searchBar resignFirstResponder];
     NSString *key = searchBar.text;
-    if(key == _currentKey){
+    if([key isEqualToString: _currentKey]){
         return;
     }
     if(key.length == 0){
         self.resultController = nil;
+        self.photoList = nil;
         [self.myTable reloadData];
     }else{
         _currentKey = searchBar.text;
-        [self fetchGooglePhotosWithKey:key];
-        //[self getPhotosFromDatabaseWithKey:key];
+        //[self getPhotosWithKey:key];
+        SearchResultTableViewController *searchResutlController = [[SearchResultTableViewController alloc] init];
+        searchResutlController.keyName = key;
+        [self.navigationController pushViewController:searchResutlController animated:YES];
     }
 }
 
@@ -128,6 +139,7 @@
 
 -(int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+
     return self.photoList.count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -136,8 +148,22 @@
     if(cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = ((Photo *)[self.photoList objectAtIndex:indexPath.row]).title;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    Photo *photo = [self.photoList objectAtIndex:indexPath.row];
+    cell.textLabel.text = photo.title;
+    cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:photo.photoDetail.tburl]]];
+    CGRect rect= cell.imageView.frame;
+    rect.size.width = 20;
+    cell.imageView.frame = rect;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Photo *photo = [self.photoList objectAtIndex: indexPath.row];
+    PhotoViewController *photoViewController = [[PhotoViewController alloc] init];
+    photoViewController.imageUrl = photo.photoDetail.url;
+    [self.navigationController pushViewController: photoViewController animated:YES];
 }
 
 //fetchResultController delegate
