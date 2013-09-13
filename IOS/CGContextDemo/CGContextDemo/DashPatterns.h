@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DashPatterns : UIView
+typedef struct
+{
+    CGFloat patterns[5];
+    int count;
+}Pattern;
 
+@interface DashPatterns : UIView
+@property (nonatomic) Pattern dashPattern;
+@property (nonatomic) float dashPhase;
 @end
