@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8D1C246C-964D-40E2-B7D5-C15593CCDCFF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PhotoSelector</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D74C5894-D022-4BF7-9970-8001A678C216</key>
+		<string>ssh://github.com/kimhou/iosdevDemos.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IOS/PhotoSelector/PhotoSelector.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D74C5894-D022-4BF7-9970-8001A678C216</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/kimhou/iosdevDemos.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D74C5894-D022-4BF7-9970-8001A678C216</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D74C5894-D022-4BF7-9970-8001A678C216</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iosdevDemos</string>
+		</dict>
+	</array>
+</dict>
+</plist>

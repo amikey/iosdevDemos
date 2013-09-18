@@ -56,7 +56,7 @@
     self.status = LOADING_STATUS_FINISHED;
     _titleLable.text = @"done";
     [UIView transitionWithView:self
-                      duration:0.5 options:UIViewAnimationCurveEaseInOut
+                      duration:0.5 options: UIViewAnimationOptionCurveEaseInOut
                     animations:^{
                         UIEdgeInsets inset = _scrollView.contentInset;
                         inset.top = 0;
@@ -85,12 +85,12 @@
         float y = self.bounds.size.height - (self.insetTop + titleRect.size.height)/ 2;
         titleRect.origin.y = y;
         _titleLable.frame = titleRect;
-        float degree = 2 * M_PI * pow(positionY / self.insetTop, 3);
+        float degree = 1.5 * M_PI * positionY / self.insetTop;
         NSLog(@"degree is : %f", degree);
         CGContextRef context = UIGraphicsGetCurrentContext();
         CGContextSetLineWidth(context, 3);
         CGContextSetRGBStrokeColor(context, 1, 1, 1, 1);
-        CGContextAddArc(context, 30, self.bounds.size.height - self.insetTop / 2, 10, - M_PI/2, degree, 0);
+        CGContextAddArc(context, 30, self.bounds.size.height - self.insetTop / 2, 10, -M_PI/2, degree, 0);
         CGContextStrokePath(context);
         
     }
