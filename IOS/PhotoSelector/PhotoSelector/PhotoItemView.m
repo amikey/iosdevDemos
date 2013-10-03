@@ -85,7 +85,24 @@
         }else{
             [selectingIcon drawInRect:iconRect];
         }
+        CGContextSetRGBFillColor(context, 0, 0, 0, 0.3);
+        CGContextFillRect(context, CGRectMake(0, rect.size.height - 30, rect.size.width, 30));
+        CGContextSetRGBFillColor(context, 1, 1, 1, 1);
+        if(_photoInfo.date){
+            rect.origin.y = rect.size.height - 30 + 2;
+            rect.origin.x = 5;
+            NSDateFormatter *dateFormater = [[NSDateFormatter alloc] init];
+            dateFormater.dateFormat = @"y-MM-dd HH:mm:ss";
+            NSString *dateString = [dateFormater stringFromDate:_photoInfo.date];
+            [dateString drawInRect:rect withFont:[UIFont fontWithName:@"arial" size:8]];
+        }
+        if(_photoInfo.locationName){
+            rect.origin.y += 10;
+            [_photoInfo.locationName drawInRect:rect withFont:[UIFont fontWithName:@"arial" size:8]];
+        }
     }
 }
+
+
 
 @end

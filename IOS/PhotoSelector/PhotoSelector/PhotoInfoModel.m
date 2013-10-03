@@ -10,4 +10,21 @@
 
 @implementation PhotoInfoModel
 
+- (void)setLocation:(CLLocation *)location
+{
+    if(_location != location){
+        _location = location;
+        [self getLocationName:location];
+    }
+}
+
+- (void)getLocationName: (CLLocation *)location
+{
+    CLGeocoder *clGeoCoder = [[CLGeocoder alloc] init];
+    [clGeoCoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
+        for (CLPlacemark *placeMark in placemarks) {
+            self.locationName = placeMark.name;
+        }
+    }];
+}
 @end

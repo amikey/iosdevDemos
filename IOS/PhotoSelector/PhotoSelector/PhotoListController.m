@@ -55,9 +55,12 @@
     [self.photoList removeAllObjects];
     [_assetsGroup enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
         if(result){
+            
             PhotoInfoModel *model = [[PhotoInfoModel alloc] init];
             model.cgImage = CGImageCreateCopy([result thumbnail]);
             model.representation = [result defaultRepresentation];
+            model.date = [result valueForProperty:ALAssetPropertyDate];
+            model.location = [result valueForProperty:ALAssetPropertyLocation];
             [self.photoList addObject:model];
         }else{
             [self.tableView reloadData];

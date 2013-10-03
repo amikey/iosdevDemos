@@ -15,6 +15,8 @@
 #import <UIKit/UIKit.h>
 #import "CommonDefine.h"
 #import "PhotoInfoModel.h"
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
 @interface PhotoItemView : UIView
 @property (strong, nonatomic) PhotoInfoModel *photoInfo;

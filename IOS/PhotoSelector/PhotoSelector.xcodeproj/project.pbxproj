@@ -22,6 +22,7 @@
 		7066A0AF17E6B2A60011C351 /* AlbumListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7066A0AE17E6B2A60011C351 /* AlbumListCell.m */; };
 		7066A0B117E6B4820011C351 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7066A0B017E6B4820011C351 /* AssetsLibrary.framework */; };
 		7098C73C17E873B400C77CE1 /* PhotoDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7098C73B17E873B400C77CE1 /* PhotoDetailView.m */; };
+		70A9B1FF17EE912500CA7F06 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A9B1FE17EE912500CA7F06 /* CoreLocation.framework */; };
 		70E1854C17E6F2E200EB239A /* PhotoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E1854B17E6F2E200EB239A /* PhotoListController.m */; };
 		70E1854F17E6F30D00EB239A /* PhotoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E1854E17E6F30D00EB239A /* PhotoListCell.m */; };
 		70E1855217E6F4BC00EB239A /* PhotoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E1855117E6F4BC00EB239A /* PhotoInfoModel.m */; };
@@ -54,6 +55,7 @@
 		7066A0B017E6B4820011C351 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		7098C73A17E873B400C77CE1 /* PhotoDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailView.h; sourceTree = "<group>"; };
 		7098C73B17E873B400C77CE1 /* PhotoDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailView.m; sourceTree = "<group>"; };
+		70A9B1FE17EE912500CA7F06 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		70E1854A17E6F2E200EB239A /* PhotoListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListController.h; sourceTree = "<group>"; };
 		70E1854B17E6F2E200EB239A /* PhotoListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListController.m; sourceTree = "<group>"; };
 		70E1854D17E6F30D00EB239A /* PhotoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListCell.h; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70A9B1FF17EE912500CA7F06 /* CoreLocation.framework in Frameworks */,
 				7066A0B117E6B4820011C351 /* AssetsLibrary.framework in Frameworks */,
 				7066A08B17E6B2010011C351 /* UIKit.framework in Frameworks */,
 				7066A08D17E6B2010011C351 /* Foundation.framework in Frameworks */,
@@ -103,6 +106,7 @@
 		7066A08917E6B2010011C351 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70A9B1FE17EE912500CA7F06 /* CoreLocation.framework */,
 				7066A08A17E6B2010011C351 /* UIKit.framework */,
 				7066A08C17E6B2010011C351 /* Foundation.framework */,
 				7066A08E17E6B2010011C351 /* CoreGraphics.framework */,

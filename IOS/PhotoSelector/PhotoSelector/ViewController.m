@@ -37,10 +37,6 @@
 
 - (void)loadAlbumList
 {
-    ALAssetsGroupEnumerationResultsBlock groupEnumeration = ^(ALAsset *result, NSUInteger index, BOOL *stop){
-        
-    };
-    
     ALAssetsLibraryGroupsEnumerationResultsBlock groupsEnumeration = ^(ALAssetsGroup *group, BOOL *stop){
         if(group){
             AlbumModel *model = [[AlbumModel alloc] init];
@@ -58,6 +54,7 @@
     assetsLibrary = [[ALAssetsLibrary alloc] init];
     [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:groupsEnumeration failureBlock:^(NSError *error) {
         NSLog(@"error: %@", error);
+        assert(0);
     }];
 }
 
