@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		3B7CFEC41811722800E935C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7CFEC31811722800E935C4 /* Foundation.framework */; };
 		3B7CFEC61811722800E935C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7CFEC51811722800E935C4 /* CoreGraphics.framework */; };
 		3B7CFEC81811722800E935C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7CFEC71811722800E935C4 /* UIKit.framework */; };
@@ -32,11 +33,39 @@
 			containerPortal = 3B7CFEB81811722800E935C4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3B7CFEBF1811722800E935C4;
+=======
+		70A5617D1814C02800D7837A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A5617C1814C02800D7837A /* Foundation.framework */; };
+		70A5617F1814C02800D7837A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A5617E1814C02800D7837A /* CoreGraphics.framework */; };
+		70A561811814C02800D7837A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A561801814C02800D7837A /* UIKit.framework */; };
+		70A561831814C02800D7837A /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A561821814C02800D7837A /* SpriteKit.framework */; };
+		70A561891814C02800D7837A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70A561871814C02800D7837A /* InfoPlist.strings */; };
+		70A5618B1814C02800D7837A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A5618A1814C02800D7837A /* main.m */; };
+		70A5618F1814C02800D7837A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A5618E1814C02800D7837A /* AppDelegate.m */; };
+		70A561921814C02800D7837A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A561901814C02800D7837A /* Main.storyboard */; };
+		70A561951814C02800D7837A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A561941814C02800D7837A /* ViewController.m */; };
+		70A561981814C02800D7837A /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A561971814C02800D7837A /* MyScene.m */; };
+		70A5619A1814C02800D7837A /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 70A561991814C02800D7837A /* Spaceship.png */; };
+		70A5619C1814C02800D7837A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A5619B1814C02800D7837A /* Images.xcassets */; };
+		70A561A31814C02800D7837A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A561A21814C02800D7837A /* XCTest.framework */; };
+		70A561A41814C02800D7837A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A5617C1814C02800D7837A /* Foundation.framework */; };
+		70A561A51814C02800D7837A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A561801814C02800D7837A /* UIKit.framework */; };
+		70A561AD1814C02800D7837A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70A561AB1814C02800D7837A /* InfoPlist.strings */; };
+		70A561AF1814C02800D7837A /* helloworldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A561AE1814C02800D7837A /* helloworldTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70A561A61814C02800D7837A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70A561711814C02800D7837A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70A561781814C02800D7837A;
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			remoteInfo = helloworld;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		3B7CFEC01811722800E935C4 /* helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7CFEC31811722800E935C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3B7CFEC51811722800E935C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -81,12 +110,59 @@
 				3B7CFEEA1811722800E935C4 /* XCTest.framework in Frameworks */,
 				3B7CFEEC1811722800E935C4 /* UIKit.framework in Frameworks */,
 				3B7CFEEB1811722800E935C4 /* Foundation.framework in Frameworks */,
+=======
+		70A561791814C02800D7837A /* helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A5617C1814C02800D7837A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		70A5617E1814C02800D7837A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		70A561801814C02800D7837A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		70A561821814C02800D7837A /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		70A561861814C02800D7837A /* helloworld-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "helloworld-Info.plist"; sourceTree = "<group>"; };
+		70A561881814C02800D7837A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		70A5618A1814C02800D7837A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70A5618C1814C02800D7837A /* helloworld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "helloworld-Prefix.pch"; sourceTree = "<group>"; };
+		70A5618D1814C02800D7837A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		70A5618E1814C02800D7837A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		70A561911814C02800D7837A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70A561931814C02800D7837A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		70A561941814C02800D7837A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		70A561961814C02800D7837A /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		70A561971814C02800D7837A /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		70A561991814C02800D7837A /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		70A5619B1814C02800D7837A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		70A561A11814C02800D7837A /* helloworldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloworldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A561A21814C02800D7837A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		70A561AA1814C02800D7837A /* helloworldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "helloworldTests-Info.plist"; sourceTree = "<group>"; };
+		70A561AC1814C02800D7837A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		70A561AE1814C02800D7837A /* helloworldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helloworldTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70A561761814C02800D7837A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A5617F1814C02800D7837A /* CoreGraphics.framework in Frameworks */,
+				70A561811814C02800D7837A /* UIKit.framework in Frameworks */,
+				70A561831814C02800D7837A /* SpriteKit.framework in Frameworks */,
+				70A5617D1814C02800D7837A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A5619E1814C02800D7837A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A561A31814C02800D7837A /* XCTest.framework in Frameworks */,
+				70A561A51814C02800D7837A /* UIKit.framework in Frameworks */,
+				70A561A41814C02800D7837A /* Foundation.framework in Frameworks */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		3B7CFEB71811722800E935C4 = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +178,28 @@
 			children = (
 				3B7CFEC01811722800E935C4 /* helloworld.app */,
 				3B7CFEE81811722800E935C4 /* helloworldTests.xctest */,
+=======
+		70A561701814C02800D7837A = {
+			isa = PBXGroup;
+			children = (
+				70A561841814C02800D7837A /* helloworld */,
+				70A561A81814C02800D7837A /* helloworldTests */,
+				70A5617B1814C02800D7837A /* Frameworks */,
+				70A5617A1814C02800D7837A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70A5617A1814C02800D7837A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70A561791814C02800D7837A /* helloworld.app */,
+				70A561A11814C02800D7837A /* helloworldTests.xctest */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		3B7CFEC21811722800E935C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,10 +208,21 @@
 				3B7CFEC71811722800E935C4 /* UIKit.framework */,
 				3B7CFEC91811722800E935C4 /* SpriteKit.framework */,
 				3B7CFEE91811722800E935C4 /* XCTest.framework */,
+=======
+		70A5617B1814C02800D7837A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70A5617C1814C02800D7837A /* Foundation.framework */,
+				70A5617E1814C02800D7837A /* CoreGraphics.framework */,
+				70A561801814C02800D7837A /* UIKit.framework */,
+				70A561821814C02800D7837A /* SpriteKit.framework */,
+				70A561A21814C02800D7837A /* XCTest.framework */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		3B7CFECB1811722800E935C4 /* helloworld */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,10 +236,26 @@
 				3B7CFEE01811722800E935C4 /* Spaceship.png */,
 				3B7CFEE21811722800E935C4 /* Images.xcassets */,
 				3B7CFECC1811722800E935C4 /* Supporting Files */,
+=======
+		70A561841814C02800D7837A /* helloworld */ = {
+			isa = PBXGroup;
+			children = (
+				70A5618D1814C02800D7837A /* AppDelegate.h */,
+				70A5618E1814C02800D7837A /* AppDelegate.m */,
+				70A561901814C02800D7837A /* Main.storyboard */,
+				70A561931814C02800D7837A /* ViewController.h */,
+				70A561941814C02800D7837A /* ViewController.m */,
+				70A561961814C02800D7837A /* MyScene.h */,
+				70A561971814C02800D7837A /* MyScene.m */,
+				70A561991814C02800D7837A /* Spaceship.png */,
+				70A5619B1814C02800D7837A /* Images.xcassets */,
+				70A561851814C02800D7837A /* Supporting Files */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			path = helloworld;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		3B7CFECC1811722800E935C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,24 +263,49 @@
 				3B7CFECE1811722800E935C4 /* InfoPlist.strings */,
 				3B7CFED11811722800E935C4 /* main.m */,
 				3B7CFED31811722800E935C4 /* helloworld-Prefix.pch */,
+=======
+		70A561851814C02800D7837A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70A561861814C02800D7837A /* helloworld-Info.plist */,
+				70A561871814C02800D7837A /* InfoPlist.strings */,
+				70A5618A1814C02800D7837A /* main.m */,
+				70A5618C1814C02800D7837A /* helloworld-Prefix.pch */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		3B7CFEEF1811722800E935C4 /* helloworldTests */ = {
 			isa = PBXGroup;
 			children = (
 				3B7CFEF51811722800E935C4 /* helloworldTests.m */,
 				3B7CFEF01811722800E935C4 /* Supporting Files */,
+=======
+		70A561A81814C02800D7837A /* helloworldTests */ = {
+			isa = PBXGroup;
+			children = (
+				70A561AE1814C02800D7837A /* helloworldTests.m */,
+				70A561A91814C02800D7837A /* Supporting Files */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			path = helloworldTests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		3B7CFEF01811722800E935C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				3B7CFEF11811722800E935C4 /* helloworldTests-Info.plist */,
 				3B7CFEF21811722800E935C4 /* InfoPlist.strings */,
+=======
+		70A561A91814C02800D7837A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70A561AA1814C02800D7837A /* helloworldTests-Info.plist */,
+				70A561AB1814C02800D7837A /* InfoPlist.strings */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,6 +313,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+<<<<<<< HEAD
 		3B7CFEBF1811722800E935C4 /* helloworld */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B7CFEF91811722800E935C4 /* Build configuration list for PBXNativeTarget "helloworld" */;
@@ -174,6 +321,15 @@
 				3B7CFEBC1811722800E935C4 /* Sources */,
 				3B7CFEBD1811722800E935C4 /* Frameworks */,
 				3B7CFEBE1811722800E935C4 /* Resources */,
+=======
+		70A561781814C02800D7837A /* helloworld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70A561B21814C02800D7837A /* Build configuration list for PBXNativeTarget "helloworld" */;
+			buildPhases = (
+				70A561751814C02800D7837A /* Sources */,
+				70A561761814C02800D7837A /* Frameworks */,
+				70A561771814C02800D7837A /* Resources */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			buildRules = (
 			);
@@ -181,6 +337,7 @@
 			);
 			name = helloworld;
 			productName = helloworld;
+<<<<<<< HEAD
 			productReference = 3B7CFEC01811722800E935C4 /* helloworld.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -191,32 +348,65 @@
 				3B7CFEE41811722800E935C4 /* Sources */,
 				3B7CFEE51811722800E935C4 /* Frameworks */,
 				3B7CFEE61811722800E935C4 /* Resources */,
+=======
+			productReference = 70A561791814C02800D7837A /* helloworld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70A561A01814C02800D7837A /* helloworldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70A561B51814C02800D7837A /* Build configuration list for PBXNativeTarget "helloworldTests" */;
+			buildPhases = (
+				70A5619D1814C02800D7837A /* Sources */,
+				70A5619E1814C02800D7837A /* Frameworks */,
+				70A5619F1814C02800D7837A /* Resources */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			buildRules = (
 			);
 			dependencies = (
+<<<<<<< HEAD
 				3B7CFEEE1811722800E935C4 /* PBXTargetDependency */,
 			);
 			name = helloworldTests;
 			productName = helloworldTests;
 			productReference = 3B7CFEE81811722800E935C4 /* helloworldTests.xctest */;
+=======
+				70A561A71814C02800D7837A /* PBXTargetDependency */,
+			);
+			name = helloworldTests;
+			productName = helloworldTests;
+			productReference = 70A561A11814C02800D7837A /* helloworldTests.xctest */;
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
+<<<<<<< HEAD
 		3B7CFEB81811722800E935C4 /* Project object */ = {
+=======
+		70A561711814C02800D7837A /* Project object */ = {
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "侯 坤明";
 				TargetAttributes = {
+<<<<<<< HEAD
 					3B7CFEE71811722800E935C4 = {
 						TestTargetID = 3B7CFEBF1811722800E935C4;
 					};
 				};
 			};
 			buildConfigurationList = 3B7CFEBB1811722800E935C4 /* Build configuration list for PBXProject "helloworld" */;
+=======
+					70A561A01814C02800D7837A = {
+						TestTargetID = 70A561781814C02800D7837A;
+					};
+				};
+			};
+			buildConfigurationList = 70A561741814C02800D7837A /* Build configuration list for PBXProject "helloworld" */;
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -224,6 +414,7 @@
 				en,
 				Base,
 			);
+<<<<<<< HEAD
 			mainGroup = 3B7CFEB71811722800E935C4;
 			productRefGroup = 3B7CFEC11811722800E935C4 /* Products */;
 			projectDirPath = "";
@@ -231,11 +422,21 @@
 			targets = (
 				3B7CFEBF1811722800E935C4 /* helloworld */,
 				3B7CFEE71811722800E935C4 /* helloworldTests */,
+=======
+			mainGroup = 70A561701814C02800D7837A;
+			productRefGroup = 70A5617A1814C02800D7837A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70A561781814C02800D7837A /* helloworld */,
+				70A561A01814C02800D7837A /* helloworldTests */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+<<<<<<< HEAD
 		3B7CFEBE1811722800E935C4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,12 +453,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7CFEF41811722800E935C4 /* InfoPlist.strings in Resources */,
+=======
+		70A561771814C02800D7837A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A561891814C02800D7837A /* InfoPlist.strings in Resources */,
+				70A5619C1814C02800D7837A /* Images.xcassets in Resources */,
+				70A5619A1814C02800D7837A /* Spaceship.png in Resources */,
+				70A561921814C02800D7837A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A5619F1814C02800D7837A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A561AD1814C02800D7837A /* InfoPlist.strings in Resources */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< HEAD
 		3B7CFEBC1811722800E935C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,40 +494,86 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7CFEF61811722800E935C4 /* helloworldTests.m in Sources */,
+=======
+		70A561751814C02800D7837A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A561981814C02800D7837A /* MyScene.m in Sources */,
+				70A561951814C02800D7837A /* ViewController.m in Sources */,
+				70A5618F1814C02800D7837A /* AppDelegate.m in Sources */,
+				70A5618B1814C02800D7837A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A5619D1814C02800D7837A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A561AF1814C02800D7837A /* helloworldTests.m in Sources */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+<<<<<<< HEAD
 		3B7CFEEE1811722800E935C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3B7CFEBF1811722800E935C4 /* helloworld */;
 			targetProxy = 3B7CFEED1811722800E935C4 /* PBXContainerItemProxy */;
+=======
+		70A561A71814C02800D7837A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70A561781814C02800D7837A /* helloworld */;
+			targetProxy = 70A561A61814C02800D7837A /* PBXContainerItemProxy */;
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+<<<<<<< HEAD
 		3B7CFECE1811722800E935C4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3B7CFECF1811722800E935C4 /* en */,
+=======
+		70A561871814C02800D7837A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70A561881814C02800D7837A /* en */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		3B7CFED71811722800E935C4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3B7CFED81811722800E935C4 /* Base */,
+=======
+		70A561901814C02800D7837A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70A561911814C02800D7837A /* Base */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		3B7CFEF21811722800E935C4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3B7CFEF31811722800E935C4 /* en */,
+=======
+		70A561AB1814C02800D7837A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70A561AC1814C02800D7837A /* en */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -315,7 +581,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 		3B7CFEF71811722800E935C4 /* Debug */ = {
+=======
+		70A561B01814C02800D7837A /* Debug */ = {
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -354,7 +624,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		3B7CFEF81811722800E935C4 /* Release */ = {
+=======
+		70A561B11814C02800D7837A /* Release */ = {
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -387,7 +661,11 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		3B7CFEFA1811722800E935C4 /* Debug */ = {
+=======
+		70A561B31814C02800D7837A /* Debug */ = {
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -401,7 +679,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		3B7CFEFB1811722800E935C4 /* Release */ = {
+=======
+		70A561B41814C02800D7837A /* Release */ = {
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -415,7 +697,11 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		3B7CFEFD1811722800E935C4 /* Debug */ = {
+=======
+		70A561B61814C02800D7837A /* Debug */ = {
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -438,7 +724,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		3B7CFEFE1811722800E935C4 /* Release */ = {
+=======
+		70A561B71814C02800D7837A /* Release */ = {
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -460,15 +750,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< HEAD
 		3B7CFEBB1811722800E935C4 /* Build configuration list for PBXProject "helloworld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B7CFEF71811722800E935C4 /* Debug */,
 				3B7CFEF81811722800E935C4 /* Release */,
+=======
+		70A561741814C02800D7837A /* Build configuration list for PBXProject "helloworld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A561B01814C02800D7837A /* Debug */,
+				70A561B11814C02800D7837A /* Release */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
 		3B7CFEF91811722800E935C4 /* Build configuration list for PBXNativeTarget "helloworld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -482,10 +781,29 @@
 			buildConfigurations = (
 				3B7CFEFD1811722800E935C4 /* Debug */,
 				3B7CFEFE1811722800E935C4 /* Release */,
+=======
+		70A561B21814C02800D7837A /* Build configuration list for PBXNativeTarget "helloworld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A561B31814C02800D7837A /* Debug */,
+				70A561B41814C02800D7837A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		70A561B51814C02800D7837A /* Build configuration list for PBXNativeTarget "helloworldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A561B61814C02800D7837A /* Debug */,
+				70A561B71814C02800D7837A /* Release */,
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
+<<<<<<< HEAD
 	rootObject = 3B7CFEB81811722800E935C4 /* Project object */;
+=======
+	rootObject = 70A561711814C02800D7837A /* Project object */;
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 }

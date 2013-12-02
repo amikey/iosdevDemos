@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tr/tr_picmgr_rep/!svn/ver/77/picmgr_iOS_proj/trunk/QQPicManager/QQPicManager/Libs/LBSSDK.framework/Headers
+END
+QLBSServiceData.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tr/tr_picmgr_rep/!svn/ver/77/picmgr_iOS_proj/trunk/QQPicManager/QQPicManager/Libs/LBSSDK.framework/Headers/QLBSServiceData.h
+END
+CSDataUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tr/tr_picmgr_rep/!svn/ver/77/picmgr_iOS_proj/trunk/QQPicManager/QQPicManager/Libs/LBSSDK.framework/Headers/CSDataUtil.h
+END
+QLBSServiceDefine.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tr/tr_picmgr_rep/!svn/ver/77/picmgr_iOS_proj/trunk/QQPicManager/QQPicManager/Libs/LBSSDK.framework/Headers/QLBSServiceDefine.h
+END
+QLBSService.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tr/tr_picmgr_rep/!svn/ver/77/picmgr_iOS_proj/trunk/QQPicManager/QQPicManager/Libs/LBSSDK.framework/Headers/QLBSService.h
+END
+QLBSMainPage.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tr/tr_picmgr_rep/!svn/ver/77/picmgr_iOS_proj/trunk/QQPicManager/QQPicManager/Libs/LBSSDK.framework/Headers/QLBSMainPage.h
+END
+CSNetManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tr/tr_picmgr_rep/!svn/ver/77/picmgr_iOS_proj/trunk/QQPicManager/QQPicManager/Libs/LBSSDK.framework/Headers/CSNetManager.h
+END

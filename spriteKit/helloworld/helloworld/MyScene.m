@@ -2,7 +2,11 @@
 //  MyScene.m
 //  helloworld
 //
+<<<<<<< HEAD
 //  Created by 侯 坤明 on 13-10-18.
+=======
+//  Created by 侯 坤明 on 13-10-21.
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 //  Copyright (c) 2013年 侯 坤明. All rights reserved.
 //
 
@@ -24,6 +28,11 @@
                                        CGRectGetMidY(self.frame));
         
         [self addChild:myLabel];
+<<<<<<< HEAD
+=======
+        
+        
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
     }
     return self;
 }
@@ -34,6 +43,7 @@
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         
+<<<<<<< HEAD
         SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithTexture:[SKTexture textureWithImageNamed:@"Spacesship"]
                                                               size:CGSizeMake(50, 50)];
         
@@ -45,6 +55,18 @@
                                                 ]];
         
         [sprite runAction:action];
+=======
+        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
+        
+        sprite.position = location;
+        
+        SKAction *action = [SKAction sequence:@[
+                                                [SKAction moveByX:500 y:20 duration:1],
+                                                [SKAction moveByX:20 y:300 duration:1]
+                                                ]];
+        
+        [sprite runAction:[SKAction repeatActionForever:action]];
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
         
         [self addChild:sprite];
     }

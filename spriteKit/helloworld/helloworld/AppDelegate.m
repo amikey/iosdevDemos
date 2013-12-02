@@ -2,7 +2,11 @@
 //  AppDelegate.m
 //  helloworld
 //
+<<<<<<< HEAD
 //  Created by 侯 坤明 on 13-10-18.
+=======
+//  Created by 侯 坤明 on 13-10-21.
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 //  Copyright (c) 2013年 侯 坤明. All rights reserved.
 //
 

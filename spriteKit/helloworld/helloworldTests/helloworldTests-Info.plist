@@ -7,7 +7,11 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
+<<<<<<< HEAD
 	<string>SAGO.${PRODUCT_NAME:rfc1034identifier}</string>
+=======
+	<string>com.${PRODUCT_NAME:rfc1034identifier}</string>
+>>>>>>> c33b6040bd0897a4848160cf13637aacfff477f7
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>

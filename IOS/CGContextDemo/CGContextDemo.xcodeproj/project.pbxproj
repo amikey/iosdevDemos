@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		70578C1817D0C7F500C83547 /* DashPatternsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70578C1717D0C7F500C83547 /* DashPatternsController.m */; };
 		70578C1B17D0C80700C83547 /* DashPatterns.m in Sources */ = {isa = PBXBuildFile; fileRef = 70578C1A17D0C80700C83547 /* DashPatterns.m */; };
+		70B8446517D4AEA5009586BC /* ImageContextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B8446417D4AEA5009586BC /* ImageContextView.m */; };
+		70B8446817D4AEC5009586BC /* ImageContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B8446717D4AEC5009586BC /* ImageContextViewController.m */; };
+		70B8446E17D57C37009586BC /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B8446A17D576E5009586BC /* UIImage+fixOrientation.m */; };
 		70BA90EA17D0920000621561 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BA90E917D0920000621561 /* Line.m */; };
 		70BA90ED17D09C1200621561 /* CapJoinWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BA90EC17D09C1200621561 /* CapJoinWidth.m */; };
 		70BA90F017D0BE1000621561 /* CapJoinWidthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BA90EF17D0BE1000621561 /* CapJoinWidthController.m */; };
@@ -31,6 +34,14 @@
 		70578C1717D0C7F500C83547 /* DashPatternsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashPatternsController.m; sourceTree = "<group>"; };
 		70578C1917D0C80700C83547 /* DashPatterns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashPatterns.h; sourceTree = "<group>"; };
 		70578C1A17D0C80700C83547 /* DashPatterns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashPatterns.m; sourceTree = "<group>"; };
+		70B8446317D4AEA5009586BC /* ImageContextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageContextView.h; sourceTree = "<group>"; };
+		70B8446417D4AEA5009586BC /* ImageContextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageContextView.m; sourceTree = "<group>"; };
+		70B8446617D4AEC5009586BC /* ImageContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageContextViewController.h; sourceTree = "<group>"; };
+		70B8446717D4AEC5009586BC /* ImageContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageContextViewController.m; sourceTree = "<group>"; };
+		70B8446917D576E5009586BC /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		70B8446A17D576E5009586BC /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		70B8446B17D578DE009586BC /* UIImagefixOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImagefixOrientation.h; sourceTree = "<group>"; };
+		70B8446C17D578DE009586BC /* UIImagefixOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImagefixOrientation.m; sourceTree = "<group>"; };
 		70BA90E817D0920000621561 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
 		70BA90E917D0920000621561 /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
 		70BA90EB17D09C1200621561 /* CapJoinWidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapJoinWidth.h; sourceTree = "<group>"; };
@@ -78,6 +89,8 @@
 				70BA90EF17D0BE1000621561 /* CapJoinWidthController.m */,
 				70578C1617D0C7F500C83547 /* DashPatternsController.h */,
 				70578C1717D0C7F500C83547 /* DashPatternsController.m */,
+				70B8446617D4AEC5009586BC /* ImageContextViewController.h */,
+				70B8446717D4AEC5009586BC /* ImageContextViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -91,6 +104,8 @@
 				70BA90EC17D09C1200621561 /* CapJoinWidth.m */,
 				70578C1917D0C80700C83547 /* DashPatterns.h */,
 				70578C1A17D0C80700C83547 /* DashPatterns.m */,
+				70B8446317D4AEA5009586BC /* ImageContextView.h */,
+				70B8446417D4AEA5009586BC /* ImageContextView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -142,6 +157,10 @@
 		70DD05D517CF73D1008CC98D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70B8446B17D578DE009586BC /* UIImagefixOrientation.h */,
+				70B8446C17D578DE009586BC /* UIImagefixOrientation.m */,
+				70B8446917D576E5009586BC /* UIImage+fixOrientation.h */,
+				70B8446A17D576E5009586BC /* UIImage+fixOrientation.m */,
 				70DD05D617CF73D1008CC98D /* CGContextDemo-Info.plist */,
 				70DD05D717CF73D1008CC98D /* InfoPlist.strings */,
 				70DD05DA17CF73D1008CC98D /* main.m */,
@@ -219,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B8446E17D57C37009586BC /* UIImage+fixOrientation.m in Sources */,
 				70DD05DB17CF73D1008CC98D /* main.m in Sources */,
 				70DD05DF17CF73D1008CC98D /* AppDelegate.m in Sources */,
 				70DD05EB17CF73D1008CC98D /* ViewController.m in Sources */,
@@ -228,6 +248,8 @@
 				70BA90F017D0BE1000621561 /* CapJoinWidthController.m in Sources */,
 				70578C1817D0C7F500C83547 /* DashPatternsController.m in Sources */,
 				70578C1B17D0C80700C83547 /* DashPatterns.m in Sources */,
+				70B8446517D4AEA5009586BC /* ImageContextView.m in Sources */,
+				70B8446817D4AEC5009586BC /* ImageContextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
