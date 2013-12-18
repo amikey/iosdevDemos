@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AssetsLibrary/AssetsLibrary.h"
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @interface PhotoListController : UIViewController
 @property (strong, nonatomic) ALAssetsGroup *assetsGroup;

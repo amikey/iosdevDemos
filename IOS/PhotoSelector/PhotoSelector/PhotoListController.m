@@ -53,6 +53,7 @@
 {
     [super viewWillAppear:animated];
     [self.photoList removeAllObjects];
+    __block int i = 0;
     [_assetsGroup enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
         if(result){
             
@@ -61,6 +62,13 @@
             model.representation = [result defaultRepresentation];
             model.date = [result valueForProperty:ALAssetPropertyDate];
             model.location = [result valueForProperty:ALAssetPropertyLocation];
+            if(i < 2){
+                ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+                [library writeImageToSavedPhotosAlbum:model.cgImage orientation:ALAssetOrientationDown completionBlock:^(NSURL *assetURL, NSError *error) {
+                    NSLog(@"%@", assetURL);
+                }];
+                i = i + 1;
+            }
             [self.photoList addObject:model];
         }else{
             [self.tableView reloadData];
