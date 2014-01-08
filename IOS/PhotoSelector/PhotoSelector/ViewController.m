@@ -33,6 +33,8 @@
     self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
     [self loadAlbumList];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(albumListUpdateNotify) name:ALAssetsLibraryChangedNotification object:nil];
 }
 
 - (void)loadAlbumList
@@ -92,6 +94,11 @@
     PhotoListController *controller = [[PhotoListController alloc] init];
     controller.assetsGroup = group;
     [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void)albumListUpdateNotify
+{
+    [self loadAlbumList];
 }
 
 @end
