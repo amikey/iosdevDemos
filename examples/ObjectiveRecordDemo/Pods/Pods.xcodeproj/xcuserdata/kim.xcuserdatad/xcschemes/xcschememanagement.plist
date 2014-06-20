@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-ObjectiveRecordDemo-ObjectiveRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ObjectiveRecordDemo-ObjectiveSugar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ObjectiveRecordDemo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>376452FC4D324EFA8D615E63</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91FABF6AAD034690B7EEDC51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A11F4F974E9F4BFC93B6AC6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -15,16 +15,25 @@
 {
     if(self = [super initWithModel:aModel]){
         
-        IBAFormSection *section1 = [self addSectionWithHeaderTitle:@"section header" footerTitle:@"footer"];
-        [section1 addFormField:[[IBATextFormField alloc] initWithKeyPath:@"text" title:@"title"]];
+        IBAFormSection *section1 = [self addSectionWithHeaderTitle:@"section header" footerTitle:nil];
+        IBATextFormField *textField = [[IBATextFormField alloc] initWithKeyPath:@"text" title:@"title"];
+        [section1 addFormField:textField];
         
         // Some basic form fields that accept text input
 		IBAFormSection *basicFieldSection = [self addSectionWithHeaderTitle:@"Basic Form Fields" footerTitle:nil];
         
 		[basicFieldSection addFormField:[[IBATextFormField alloc] initWithKeyPath:@"text" title:@"Text"]];
 		[IBATextFormField passwordTextFormFieldWithSection:basicFieldSection keyPath:@"password" title:@"Password" valueTransformer:nil];
+        
 		[basicFieldSection addFormField:[[IBABooleanFormField alloc] initWithKeyPath:@"booleanSwitchValue" title:@"Switch"]];
+        
 		[basicFieldSection addFormField:[[IBABooleanFormField alloc] initWithKeyPath:@"booleanCheckValue" title:@"Check" type:IBABooleanFormFieldTypeCheck]];
+        
+        IBAButtonFormField *button = [[IBAButtonFormField alloc] initWithTitle:@"submit" icon:nil executionBlock:^{
+            NSLog(@"%@", aModel[@"text"]);
+        }];
+        button.formFieldStyle.labelTextColor = [UIColor redColor];
+        [basicFieldSection addFormField:button];
         
     }
     return self;

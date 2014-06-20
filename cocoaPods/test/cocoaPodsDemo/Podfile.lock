@@ -1,0 +1,13 @@
+PODS:
+  - IBAForms (1.1.0)
+  - MagicalRecord (2.2)
+
+DEPENDENCIES:
+  - IBAForms
+  - MagicalRecord
+
+SPEC CHECKSUMS:
+  IBAForms: 80f339546a2ad1b18d81a33e7d3b0513413a5e82
+  MagicalRecord: b1fc46c99a9749fe7fe7e6f43a89b62ef5201933
+
+COCOAPODS: 0.29.0

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "FormViewController.h"
 #import "DataSource.h"
+#import <objc/runtime.h>
 
 @interface ViewController (){
     
@@ -32,12 +33,14 @@
 
 - (void)gotoForm:(id)sender
 {
-    NSMutableDictionary *sampleFormModel = [[NSMutableDictionary alloc] init];
-    
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    dic[@"text"] = @"asdf";
+    NSObject *obj = [[NSObject alloc] init];
+    objc_setAssociatedObject(obj, @"text", @"bbb", OBJC_ASSOCIATION_RETAIN);
 	// Values set on the model will be reflected in the form fields.
-	[sampleFormModel setObject:@"A value contained in the model" forKey:@"readOnlyText"];
-    DataSource *dataSource = [[DataSource alloc]initWithModel:sampleFormModel];
+    DataSource *dataSource = [[DataSource alloc]initWithModel:obj];
     FormViewController *ctl = [[FormViewController alloc] initWithNibName:nil bundle:nil formDataSource:dataSource];
+    
     [self presentViewController:ctl animated:YES completion:nil];
 }
 

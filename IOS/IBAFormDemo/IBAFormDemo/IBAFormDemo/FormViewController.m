@@ -9,19 +9,28 @@
 #import "FormViewController.h"
 
 @interface FormViewController (){
-    UITableView *_tableView;
+
 }
 
 @end
 
 @implementation FormViewController
 
+- (void)loadView
+{
+    UIView *view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.view = view;
+    UITableView *atableView = [[UITableView alloc] initWithFrame:view.bounds style:UITableViewStyleGrouped];
+    atableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [view addSubview:atableView];
+    self.tableView = atableView;
+    self.view = view;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:_tableView];
-    self.tableView = _tableView;
 }
 
 @end

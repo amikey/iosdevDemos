@@ -544,6 +544,7 @@
 				3B08741D187D8C5F00A0223C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B08741E187D8C5F00A0223C /* Build configuration list for PBXNativeTarget "IBAFormDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +553,7 @@
 				3B087420187D8C5F00A0223C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
