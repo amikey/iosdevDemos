@@ -30,6 +30,13 @@
 			remoteGlobalIDString = 3B6CF8DC1952C48B00E65D73;
 			remoteInfo = UserNotificationDemo;
 		};
+		3B6CF9191952D13B00E65D73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B6CF8D51952C48B00E65D73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B6CF8DC1952C48B00E65D73;
+			remoteInfo = UserNotificationDemo;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +163,7 @@
 			dependencies = (
 				3B6CF8F51952C48B00E65D73 /* PBXTargetDependency */,
 				3B6CF9181952D13B00E65D73 /* PBXTargetDependency */,
+				3B6CF91A1952D13B00E65D73 /* PBXTargetDependency */,
 			);
 			name = UserNotificationDemoTests;
 			productName = UserNotificationDemoTests;
@@ -250,6 +258,11 @@
 			isa = PBXTargetDependency;
 			target = 3B6CF8DC1952C48B00E65D73 /* UserNotificationDemo */;
 			targetProxy = 3B6CF9171952D13B00E65D73 /* PBXContainerItemProxy */;
+		};
+		3B6CF91A1952D13B00E65D73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B6CF8DC1952C48B00E65D73 /* UserNotificationDemo */;
+			targetProxy = 3B6CF9191952D13B00E65D73 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
