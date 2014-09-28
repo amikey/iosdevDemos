@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>410360BF-860C-4AB6-B7D2-C66C871FE20C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IOS-alert</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>573C44084F9090B4EF33D6B623458F0B567BD6CB</key>
+		<string>github.com:kimhou/iosdevDemos.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IOS/IOS8/IOS-alert/IOS-alert.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>573C44084F9090B4EF33D6B623458F0B567BD6CB</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:kimhou/iosdevDemos.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>573C44084F9090B4EF33D6B623458F0B567BD6CB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>573C44084F9090B4EF33D6B623458F0B567BD6CB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOSDEV</string>
+		</dict>
+	</array>
+</dict>
+</plist>

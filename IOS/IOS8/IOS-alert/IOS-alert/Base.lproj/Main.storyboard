@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="XQD-1u-Z21">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBN-F3-fNn">
+                                <rect key="frame" x="74" y="74" width="172" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="segue Popover">
+                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ob0-Ip-7jF" kind="popover" popoverAnchorView="vBN-F3-fNn" id="216-mI-wBb">
+                                        <popoverArrowDirection key="popoverArrowDirection" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-8C-6Ft">
+                                <rect key="frame" x="74" y="125" width="172" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Code Popover">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="codePopoverButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SHg-CV-bEf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d00-sG-daj">
+                                <rect key="frame" x="74" y="173" width="172" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alertButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kiI-Kb-5q3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qw-B5-xfW">
+                                <rect key="frame" x="109" y="207" width="103" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="ActionSheet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionSheetButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kpD-Lw-YW3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFu-OX-tke">
+                                <rect key="frame" x="71" y="354" width="178" height="30"/>
+                                <state key="normal" title="push and hide bottom bar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yTc-xW-fPn" kind="push" id="QpO-3N-ZnT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DEI-cm-h9K">
+                                <rect key="frame" x="85" y="325" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="3qw-B5-xfW" secondAttribute="centerX" id="3oL-Rp-4y6"/>
+                            <constraint firstAttribute="centerY" secondItem="QiX-8C-6Ft" secondAttribute="centerY" constant="66" id="AIg-b7-sIr"/>
+                            <constraint firstAttribute="centerX" secondItem="vBN-F3-fNn" secondAttribute="centerX" id="CyQ-Am-pFV"/>
+                            <constraint firstAttribute="centerX" secondItem="QiX-8C-6Ft" secondAttribute="centerX" id="EWC-3I-HQT"/>
+                            <constraint firstAttribute="centerX" secondItem="WFu-OX-tke" secondAttribute="centerX" id="LqK-EX-LD4"/>
+                            <constraint firstAttribute="centerY" secondItem="vBN-F3-fNn" secondAttribute="centerY" constant="117" id="TFJ-db-LY7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DEI-cm-h9K" secondAttribute="trailing" constant="69" id="TLi-0p-jVK"/>
+                            <constraint firstAttribute="centerY" secondItem="WFu-OX-tke" secondAttribute="centerY" constant="-160.5" id="UnC-SP-Sk5"/>
+                            <constraint firstAttribute="centerX" secondItem="DEI-cm-h9K" secondAttribute="centerX" id="gwl-al-fCr"/>
+                            <constraint firstAttribute="centerY" secondItem="3qw-B5-xfW" secondAttribute="centerY" constant="-16" id="jqr-Ny-Ljh"/>
+                            <constraint firstAttribute="centerY" secondItem="d00-sG-daj" secondAttribute="centerY" constant="18" id="mCA-O6-A31"/>
+                            <constraint firstAttribute="centerX" secondItem="d00-sG-daj" secondAttribute="centerX" id="osc-o7-Ha4"/>
+                            <constraint firstAttribute="width" secondItem="DEI-cm-h9K" secondAttribute="width" constant="170" id="qNx-LQ-6bL"/>
+                            <constraint firstAttribute="centerX" secondItem="d00-sG-daj" secondAttribute="centerX" id="sbx-83-4LC"/>
+                            <constraint firstAttribute="width" secondItem="DEI-cm-h9K" secondAttribute="height" multiplier="32:3" id="wig-oV-6sb"/>
+                            <constraint firstAttribute="centerY" secondItem="DEI-cm-h9K" secondAttribute="centerY" constant="-131.5" id="x9p-tx-Lxt"/>
+                            <constraint firstAttribute="centerY" secondItem="d00-sG-daj" secondAttribute="centerY" constant="18" id="xO6-4P-XXb"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" title="tab item" id="bHz-iy-R1A"/>
+                    <navigationItem key="navigationItem" title="Demo" id="ede-NP-iBm"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="639" y="-108"/>
+        </scene>
+        <!--Popover-->
+        <scene sceneID="55s-an-02n">
+            <objects>
+                <viewController storyboardIdentifier="PopoverController" title="Popover" id="ob0-Ip-7jF" customClass="PopoverController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bMm-15-4J0"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Rx-Hd-M0v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HI1-0B-mvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Popover View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmh-eW-IHi">
+                                <rect key="frame" x="88" y="190" width="178" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kb-HP-8mC">
+                                <rect key="frame" x="147" y="286" width="37" height="30"/>
+                                <state key="normal" title="close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="ob0-Ip-7jF" eventType="touchUpInside" id="Rue-qO-l7P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.065491219429999997" green="0.5830172535" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Popover" id="b3I-ZA-yLm">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="azm-xi-45D">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="c8b-qR-Emt">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonTouched:" destination="ob0-Ip-7jF" eventType="touchUpInside" id="RPG-lu-lDQ"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UoD-HK-ctX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="-105"/>
+        </scene>
+        <!--Pushed View Controller-->
+        <scene sceneID="3Na-4J-Md9">
+            <objects>
+                <viewController id="yTc-xW-fPn" customClass="pushedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hEz-9t-hJg"/>
+                        <viewControllerLayoutGuide type="bottom" id="9lL-r7-NrX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Bg-VN-7CS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.084457121479999994" green="0.64346976899999997" blue="0.23999067509999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3xw-S8-eYK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCZ-58-rHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="422"/>
+        </scene>
+        <!--1-->
+        <scene sceneID="N50-x4-kZO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="98t-iv-hzf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="1" id="kEK-hN-12S"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rjY-72-Ts7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yyt-bP-S83"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tr9-pR-dnu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="-108"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Gkb-kD-2Xp">
+            <objects>
+                <tabBarController id="XQD-1u-Z21" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="897-fU-xNf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="98t-iv-hzf" kind="relationship" relationship="viewControllers" id="bgi-Xb-AYh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khX-Jl-kjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278" y="-108"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
